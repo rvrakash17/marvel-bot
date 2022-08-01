@@ -1,0 +1,24 @@
+{
+  "name": "marvel-bot",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/akash-hacker-pro/marvel-bot",
+  "logo": "https://i.postimg.cc/nz9MmMV8/65fe4e2f9bb458eb96ecc90948c356e2.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
